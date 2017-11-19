@@ -1,0 +1,15 @@
+users:
+ - userid: admim
+   password: changeit
+   roles: [admins]
+ - userid: user
+   password: changeit
+   roles: [users]
+ 
+permissions:
+ - role: admins
+   predicate: path-prefix[path="/"]
+ - role: $unauthenticated
+   predicate: path-prefix[path="/publicdb/"] and method[value="GET"]
+ - role: users
+   predicate: path-prefix[path="/publicdb/"]
