@@ -1,9 +1,9 @@
 users:
- - userid: admim
-   password: changeit
+ - userid: admin
+   password: admin
    roles: [admins]
  - userid: user
-   password: changeit
+   password: user
    roles: [users]
  
 permissions:

@@ -11,11 +11,11 @@
 
 https-listener: true
 https-host: 0.0.0.0
-https-port: 4443
+https-port: 443
 
 http-listener: true
 http-host: 0.0.0.0
-http-port: 8080
+http-port: 80
 
 ajp-listener: false
 ajp-host: 0.0.0.0
@@ -26,7 +26,7 @@ ajp-port: 8009
 # The name of this restheart instance. displayed in log, also allows to implement instance specific custom code
 # For instance, an email notifier hook can send emails to a test email address in development environments
 
-instance-name: docker-dev
+instance-name: restheart-docker
 
 #### default representation format (PLAIN_JSON or HAL)
 
@@ -104,7 +104,7 @@ application-logic-mounts:
       where: /ping
       secured: false
       args:
-          msg: "ciao from the restheart team"
+          msg: "Pong!! - Visite LuizCarlosFaria.net"
     - what: org.restheart.handlers.applicationlogic.GetRoleHandler
       where: /roles
       secured: false
@@ -256,10 +256,10 @@ query-time-limit: 0
 aggregation-time-limit: 0
 
 # Number of I/O threads created for non-blocking tasks. at least 2. suggested value: core*2
-io-threads: 2
+io-threads: 4
 
 # Number of threads created for blocking tasks (such as ones involving db access). suggested value: core*16
-worker-threads: 8
+worker-threads: 32
 
 # Use 16k buffers for best performance - as in linux 16k is generally the default amount of data that can be sent in a single write() call
 buffer-size: 16384
