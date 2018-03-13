@@ -41,7 +41,7 @@ Used to configure authentication and authorization on **REST**Heart, by default 
 
 # Using API by Example
 
-### Create appdb database
+### Create _appdb_ database
 #### Request
 ```
 curl -i -X PUT \
@@ -65,7 +65,7 @@ curl -i -X PUT \
 
 
 
-### Create **person** collection on **appdb** database
+### Create _person_ collection on _appdb_ database
 #### Request
 ```
 curl -i -X PUT \
@@ -88,7 +88,7 @@ curl -i -X PUT \
 
 
 
-### Insert one document on person collection of appdb database
+### Insert one document on _person_ collection
 #### Request
 ```
 curl -i -X POST \
@@ -109,7 +109,7 @@ curl -i -X POST \
 ```
 
 
-### Update one document on person collection of appdb database
+### Update one document on _person_ collection
 #### Request
 ```
 curl -i -X PUT \
@@ -131,7 +131,7 @@ curl -i -X PUT \
 
 
 
-### List Databases
+### List all databases
 
 #### Request
 ```
@@ -159,7 +159,7 @@ curl -i -X GET \
 
 
 
-### List collections on appdb
+### List collections on _appdb_
 
 #### Request
 ```
@@ -193,7 +193,7 @@ curl -i -X GET \
 
 
 
-### List documents on person collection
+### List documents on _person_ collection
 
 #### Request
 ```
@@ -231,7 +231,7 @@ curl -i -X GET \
 ```
 
 
-### Query documents on person collection
+### Query documents on _person_ collection
 
 #### Request
 ```
@@ -269,7 +269,7 @@ curl -i -X GET \
 ```
 
 
-### Delete document on person collection
+### Delete document on _person_ collection
 
 #### Request
 ```
@@ -283,7 +283,7 @@ curl -i -X DELETE \
 ```
 
 
-### Drop person collection
+### Drop _person_ collection
 
 #### Request
 ```
@@ -298,7 +298,7 @@ curl -i -X DELETE \
 ```
 
 
-### Drop appdb database
+### Drop _appdb_ database
 
 #### Request
 ```
