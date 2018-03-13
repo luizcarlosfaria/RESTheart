@@ -3,6 +3,12 @@
 
 This is a premade stack designed to reduce friction on adopt MongoDB with **REST**Heart.
 
+## Releases and Release Notes
+[![Latest release](https://img.shields.io/github/release/docker-gallery/RESTheart.svg)](https://github.com/docker-gallery/RESTheart/releases/latest) 
+[![GitHub Release Date](https://img.shields.io/github/release-date/docker-gallery/RESTheart.svg)](https://github.com/docker-gallery/RESTheart/releases/latest)
+
+[All releases](https://github.com/docker-gallery/RESTheart/releases) 
+
 ### Stack Services
 * MongoDB (without authentication)
 * **REST**Heart
@@ -36,7 +42,14 @@ Used to configure authentication and authorization on **REST**Heart, by default 
 # Get Started
 
 * On any docker environment
-* There we go! Run `docker-compose up`. Just it. 
+* There we go! `
+Run 
+```
+git clone https://github.com/docker-gallery/RESTheart.git
+cd ./RESTheart
+docker-compose up
+```
+Just it. 
 
 
 # Using API by Example
