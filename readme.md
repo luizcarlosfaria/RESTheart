@@ -30,7 +30,7 @@ Docker Compose file used do declare configurations about both services (resthear
 #### 2 - restheart.yml
 Used to configure **REST**Heart.
 
-Take a look at line 69: `mongo-uri: mongodb://mongodb` defines a connectionstring to worj with mongodb.
+Take a look at line 69: `mongo-uri: mongodb://mongodb` defines a connectionstring to work with mongodb.
 
 #### 3 - security.yml
 Used to configure authentication and authorization on **REST**Heart, by default i've produced some rules, like:
